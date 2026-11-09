@@ -1,0 +1,24 @@
+# Dependencias
+/node_modules/
+/vendor/
+
+# Variables de entorno (secretos)
+.env
+.env.*
+!.env.example
+
+# Build generado por Gulp (npx gulp) — se ignora el contenido...
+/public/build/*
+# ...excepto las imágenes: gulpfile.js no tiene tarea de imágenes y las vistas usan build/img/
+!/public/build/img/
+
+# Source maps
+*.map
+
+# Logs
+*.log
+
+# Sistema / editor
+.DS_Store
+.vscode/
+.idea/
